@@ -9,6 +9,7 @@ class Session extends Controlador{
     }
 
     function index(){
+    	
         $this->vista($this->carpeta . '/inicio');
     }
 }
