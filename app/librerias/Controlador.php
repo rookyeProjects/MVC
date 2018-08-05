@@ -15,7 +15,7 @@ class Controlador{
 	}
 
 	//Cargar Vista
-	public function vista($vista, $datos = []){
+	public function vista($vista, $datos = false){
 
 		//Chequear si la vista existe
 		if(file_exists('../app/vistas/' . $vista . '.php')){

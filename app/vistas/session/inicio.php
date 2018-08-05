@@ -5,9 +5,9 @@
 	</div>
 	<form>
 	  <div class="form-group">
-	    <label for="exampleInputEmail1">Email address</label>
+	    <label for="exampleInputEmail1">Correo Electronico</label>
 	    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-	    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+	    <small id="emailHelp" class="form-text text-muted">No compartiremos tu información con alguien mas.</small>
 	  </div>
 	  <div class="form-group">
 	    <label for="exampleInputPassword1">Password</label>
@@ -15,9 +15,9 @@
 	  </div>
 	  <div class="form-group form-check">
 	    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-	    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+	    <label class="form-check-label" for="exampleCheck1">Recordar</label>
 	  </div>
-	  <button type="submit" class="btn btn-primary">Submit</button>
+	  <button type="submit" class="btn btn-primary">Entrar</button>
 	</form>
 </div>
 <?php require RUTA_APP . '/vistas/inc/footer.php'; ?>

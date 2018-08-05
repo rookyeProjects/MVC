@@ -1,6 +1,8 @@
 <?php
 
-class Articulo extends Illuminate\Database\Eloquent\Model{
+use Illuminate\Database\Eloquent\Model as Eloquent;
+
+class articulo extends Eloquent {
 
 	private $db;
 
@@ -9,9 +11,8 @@ class Articulo extends Illuminate\Database\Eloquent\Model{
 	}
 
 	public function obtenerArticulos(){
-		$articulos = DB::table('articulos')->select('id', 'titulo')->get();
-		//$articulos = blog1::all();
-		
+		//$articulos = articulo::select('id','titulo')->where('id', 1)->get();
+		$articulos = articulo::all();
 		return  $articulos;
 	}
 }

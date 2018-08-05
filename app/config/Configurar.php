@@ -16,7 +16,7 @@ $capsule = new Capsule;
 //Indicamos en el siguiente array los datos de configuración de la BD
 $capsule->addConnection([
  'driver' =>'mysql',
- 'host' => 'localhost:8888',
+ 'host' => 'localhost',
  'database' => 'blog1',
  'username' => 'root',
  'password' => '',
@@ -26,6 +26,8 @@ $capsule->addConnection([
 ]);
  
 //Y finalmente, iniciamos Eloquent
+//$capsule->bootEloquent();
+$capsule->setAsGlobal();
 $capsule->bootEloquent();
 
 	

@@ -9,7 +9,7 @@
 	*/
 
 	class Core{
-		protected $controladorActual = 'Paginas';
+		protected $controladorActual = 'Session';
 		protected $metodoActual = 'index';
 		protected $parametros = [];
 
