@@ -10,7 +10,7 @@
 
 	class Core{
 		protected $controladorActual = 'Session';
-		protected $metodoActual = 'index';
+		protected $metodoActual = 'inicio';
 		protected $parametros = [];
 
 		//Constructor
