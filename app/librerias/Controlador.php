@@ -3,7 +3,7 @@
 //Clase controlador principal
 //Se encarga de poder cargar los modelos y las vistas
 
-class Controlador{
+abstract class Controlador{
 		
 	//Cargar MOdelo
 	public function modelo($modelo){
@@ -25,5 +25,7 @@ class Controlador{
 			die("La vista no existe");
 		}
 	}
+
+	protected function helper_data(){}
 
 }
