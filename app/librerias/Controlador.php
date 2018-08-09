@@ -6,7 +6,7 @@
 abstract class Controlador{
 		
 	//Cargar MOdelo
-	public function modelo($modelo){
+	protected function modelo($modelo){
 		//carga
 		require_once '../app/modelos/' . $modelo . '.php';
 		//retornamos el modelo
@@ -15,7 +15,7 @@ abstract class Controlador{
 	}
 
 	//Cargar Vista
-	public function vista($vista, $datos = false){
+	protected function vista($vista, $datos = false){
 
 		//Chequear si la vista existe
 		if(file_exists('../app/vistas/' . $vista . '.php')){
@@ -26,6 +26,14 @@ abstract class Controlador{
 		}
 	}
 
-	protected function helper_data(){}
+	abstract function helper_data();
+
+	public function validarCorreo(){
+
+	}
+
+	public function validarPassword(){
+		
+	}
 
 }

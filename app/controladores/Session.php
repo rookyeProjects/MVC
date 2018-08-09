@@ -15,25 +15,26 @@ class Session extends Controlador{
 
     function verificarUsuario(){
         $datos = array();
-        $datos = $this->handler();
+        $datos = $this->helper_data();
+        var_dump($datos);
     }
 
     function helper_data(){
         $user_data = array();
         if($_POST) {
             if(array_key_exists('email', $_POST)) {
-            $user_data['email'] = $_POST['email'];
+                $user_data['email'] = $_POST['email'];
             }
             if(array_key_exists('password', $_POST)) {
-            $user_data['password'] = $_POST['password'];
+                $user_data['password'] = $_POST['password'];
             }
             if(array_key_exists('recordar', $_POST)) {
-            $user_data['recordar'] = $_POST['recordar'];
+                $user_data['recordar'] = $_POST['recordar'];
             }
         }
         return $user_data;
     }
-
+}
 
 	/*
 function helper_user_data() {
