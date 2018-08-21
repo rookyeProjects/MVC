@@ -5,12 +5,13 @@ class Session extends Controlador{
     private $carpeta = 'session';
 
     function __construct(){
-
+        $this->articuloModelo = $this->modelo('Usuarios');
     }
 
     function inicio(){
-    	
-        $this->vista($this->carpeta . '/inicio');
+        $datos_session = array();
+    	$datos_session = $this->recordarDatos();
+        $this->vista($this->carpeta . '/inicio', $datos_session);
     }
 
     function verificarUsuario(){
@@ -33,6 +34,24 @@ class Session extends Controlador{
             }
         }
         return $user_data;
+    }
+
+    private function validarCorreo($email) {
+		if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+           return true;
+        }else{
+            return false;
+        }
+    }
+    
+    private function recordarDatos() {
+        if(isset($_COOKIE["email"], $_COOKIE["password"])) {
+            if(!empty($_COOKIE["email"]) && !empty($_COOKIE["password"])) {
+                return $_COOKIE;
+            }else{
+                return false;
+            }
+        }
     }
 }
 

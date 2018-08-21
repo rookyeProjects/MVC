@@ -28,12 +28,7 @@ abstract class Controlador{
 
 	abstract function helper_data();
 
-	public function validarCorreo(){
 
-	}
 
-	public function validarPassword(){
-		
-	}
 
 }
