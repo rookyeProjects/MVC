@@ -20,7 +20,7 @@
 			>
 	  </div>
 		<div class="form-group" id="crear_cuenta">
-			<a href="#">Crear Cuenta</a>
+			<a href="#" class="bootstrap-link">Crear Cuenta</a>
 	  </div>
 	  <div class="form-group form-check">
 	    <input type="checkbox" name="recordar" class="form-check-input" id="exampleCheck1" 

@@ -5,7 +5,7 @@ class Session extends Controlador{
     private $carpeta = 'session';
 
     function __construct(){
-        $this->articuloModelo = $this->modelo('Usuarios');
+        //$this->articuloModelo = $this->modelo('Usuarios');
     }
 
     function inicio(){
