@@ -26,7 +26,33 @@
                     Llene el campo por favor.
                 </div>
             </div>
+            <div class="col-md-12">
+                <label for="validationServer01">Correo electronico</label>
+                <input type="email" class="form-control is-valid" id="validationServer01" placeholder="email" required>
+                <div class="invalid-feedback">
+                    Llene el campo por favor.
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="validationServer01">Contraseña</label>
+                <input type="email" class="form-control is-valid" id="validationServer01" placeholder="Contraseña" required>
+                <div class="invalid-feedback">
+                    Llene el campo por favor.
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="validationServer01">Repita la contraseña</label>
+                <input type="email" class="form-control is-valid" id="validationServer01" placeholder="Contraseña nuevamente" required>
+                <div class="invalid-feedback">
+                    Llene el campo por favor.
+                </div>
+            </div>
+            <div class="col-md-12"><br>
+                <label for="validationServer01"></label>
+                <button type="submit" class="btn btn-success">Success</button>
+            </div>
         </div>
+        <br><br>
     </form>
 </div>
 <?php require RUTA_APP . '/vistas/inc/footer.php'; ?>
