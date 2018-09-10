@@ -19,14 +19,14 @@
 				placeholder="Password" required
 			>
 	  </div>
-		<div class="form-group" id="crear_cuenta">
-			<a href="#" class="bootstrap-link">Crear Cuenta</a>
-	  </div>
 	  <div class="form-group form-check">
 	    <input type="checkbox" name="recordar" class="form-check-input" id="exampleCheck1" 
 				<?php /*PHP */ if($datos != false){ echo "checked";} ?>
 			>
 	    <label class="form-check-label" for="exampleCheck1">Recordar</label>
+	  </div>
+		<div class="form-group">
+			<a href="Session/viewNuevo" class="bootstrap-link">Crear Cuenta</a>
 	  </div>		
 	  <button type="submit" class="btn btn-primary">Entrar</button>
 	</form>

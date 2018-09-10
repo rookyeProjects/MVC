@@ -53,6 +53,10 @@ class Session extends Controlador{
             }
         }
     }
+
+    public function viewNuevo(){
+        $this->vista($this->carpeta . '/nuevo', false);
+    }
 }
 
 	/*
